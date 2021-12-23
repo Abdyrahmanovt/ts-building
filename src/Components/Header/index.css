@@ -2,9 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
+
 }
 .header-right{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
+    z-index: 100000;
+}
+.logo{
+    color: white;
+    z-index: 100000;
+}
+.nav-link{
+    color: white;
 }

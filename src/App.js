@@ -1,22 +1,24 @@
 import React from 'react';
-import { Route,Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./view/Home";
 import About from "./view/About";
 import Contacts from "./view/Contacts";
-
+import Projects from "./view/Projects";
 
 
 const App = () => {
     return (
         <div className="app">
             <Header/>
-            <Routes>
-                <Route exact path='/' component={Home}/>
-                <Route exact path='/about' component={About}/>
-                <Route exact path='/contacts' component={Contacts}/>
-                <Route exact path='/' component={Home}/>
-            </Routes>
+           <div className="pages">
+               <Routes>
+                   <Route exact path='/' element={<Home/>}/>
+                   <Route exact path='/about' element={<About/>}/>
+                   <Route exact path='/contacts' element={<Contacts/>}/>
+                   <Route exact path='/projects' element={<Projects/>}/>
+               </Routes>
+           </div>
         </div>
     )
 };

@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+import apartament from "./apartament.jpg"
+
+
 
 const Home = () => {
     return (
-        <div>
-            
+        <div className='hero'>
+            <img src={apartament} alt=""/>
         </div>
     );
 };

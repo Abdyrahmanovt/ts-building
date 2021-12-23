@@ -1,0 +1,50 @@
+.contacts {
+    background-color: #353765;
+    padding: 10px 20px;
+    height: 100vh;
+
+}
+
+.contact-info {
+    background-color: #1b1c31;
+    margin-top: 80px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.address {
+    width: 100px;
+}
+
+.phone {
+    width: 170px;
+}
+
+.social-icon:not(:first-child) {
+    margin-left: 10px;
+}
+
+.fab {
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+/*==MAP==*/
+
