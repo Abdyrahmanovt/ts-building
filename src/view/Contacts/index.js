@@ -10,10 +10,10 @@ const Contacts = () => {
                     <p className="gmail">www.ihlas.kg <br/> info@ihlas.kg</p>
                     <p className="phone">+996 (556) 55-11-11 +996 (706) 55-11-11 +996 (776) 55-11-11</p>
                     <div className="social">
-                        <a href="#" className='social-icon'><i className="fab fa-facebook-square"/></a>
+                        <a href="https://www.instagram.com/ihlaskg/?utm_medium=copy_link" className='social-icon'><i className="fab fa-facebook-square"/></a>
                         <a className='social-icon' href="https://www.instagram.com/ihlaskg/?utm_medium=copy_link"><i
                             className="fab fa-instagram-square"/></a>
-                        <a href="#" className='social-icon'><i className="fab fa-odnoklassniki-square"/></a>
+                        <a href="https://www.instagram.com/ihlaskg/?utm_medium=copy_link" className='social-icon'><i className="fab fa-odnoklassniki-square"/></a>
                     </div>
                 </div>
                 <div className="contact-map">
