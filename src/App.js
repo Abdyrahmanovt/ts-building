@@ -5,8 +5,7 @@ import Home from "./view/Home";
 import About from "./view/About";
 import Contacts from "./view/Contacts";
 import Projects from "./view/Projects";
-// import Progress from "./Components/Progress";
-// import End from "./Components/End";
+import Browse from "./Components/Browse";
 
 
 const App = () => {
@@ -19,8 +18,7 @@ const App = () => {
                    <Route exact path='/about' element={<About/>}/>
                    <Route exact path='/contacts' element={<Contacts/>}/>
                    <Route exact path='/projects' element={<Projects/>}/>
-                   {/*<Route exact path='/progress' element={<Progress/>}/>*/}
-                   {/*<Route exact path='/end' element={<End/>}/>*/}
+                   <Route exact path='/projectInfo' element={<Browse/>}/>
                </Routes>
            </div>
         </div>

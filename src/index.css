@@ -17,7 +17,9 @@ code {
 .pages {
     position: relative;
 }
-
+a{
+    list-style: none;
+}
 Header {
     position: absolute;
     top: 0;
