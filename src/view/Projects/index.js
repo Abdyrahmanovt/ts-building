@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import './index.css'
 import {Link} from "react-router-dom";
-// import {Link} from "react-router-dom";
 
 const Projects = ({}) => {
     const [projects, setProjects] = useState([])
+    const [isOpen, setIsOpen] = useState(false)
 
 
     useEffect(() => {
@@ -16,11 +16,13 @@ const Projects = ({}) => {
         <div className='projects'>
             <div className='grid card'>
                 {
-                    projects.map(item => (
-                        <Link to='/projectInfo'><div className='box'>
+                    isOpen && projects.map(item => (
+                        <Link to='/projectInfo' key={item.id}>
+                            <div className='box' >
                                 <img src={item.image} className='card-img' alt=""/>
                                 <p className='card-info'>{item.title}</p>
                                 <p className='card-info'>{item.address}</p>
+                                <span>{item.status === true}</span>
                             </div>
                         </Link>
                     ))
