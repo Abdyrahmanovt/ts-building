@@ -5,6 +5,8 @@ import Home from "./view/Home";
 import About from "./view/About";
 import Contacts from "./view/Contacts";
 import Projects from "./view/Projects";
+// import Progress from "./Components/Progress";
+// import End from "./Components/End";
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
                    <Route exact path='/about' element={<About/>}/>
                    <Route exact path='/contacts' element={<Contacts/>}/>
                    <Route exact path='/projects' element={<Projects/>}/>
+                   {/*<Route exact path='/progress' element={<Progress/>}/>*/}
+                   {/*<Route exact path='/end' element={<End/>}/>*/}
                </Routes>
            </div>
         </div>

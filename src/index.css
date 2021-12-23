@@ -25,7 +25,6 @@ Header {
     right: 0;
     color: white;
 }
-img{
-    width: 100%;
-    object-fit: contain;
+.active{
+    color: grey;
 }

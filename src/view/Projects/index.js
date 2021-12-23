@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import './index.css'
+// import {Link} from "react-router-dom";
 
-const Projects = () => {
+const Projects = ({}) => {
     const [projects, setProjects] = useState([])
-    const [process,setProcess] = useState(false)
+
 
     useEffect(() => {
         axios('https://613fef235cb9280017a110a6.mockapi.io/apartaments')
@@ -12,11 +13,10 @@ const Projects = () => {
     }, [])
     return (
         <div className='projects'>
-            <div>
-                <button onClick={()=>setProcess(true)}>В процессе</button>
-
-                <button >Законили</button>
-            </div>
+            {/*<div>*/}
+            {/*    <Link to='/progress'>В процессе</Link>*/}
+            {/*    <Link to='/end'>Завершено</Link>*/}
+            {/*</div>*/}
             <div className='grid card'>
                 {
                     projects.map(item => (
@@ -28,11 +28,6 @@ const Projects = () => {
                     ))
                 }
             </div>
-            {
-                projects.map(el =>(
-                    <div>{el.status === true}</div>
-                )) ?
-            }
         </div>
     );
 };

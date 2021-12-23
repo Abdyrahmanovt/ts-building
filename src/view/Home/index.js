@@ -1,12 +1,15 @@
 import React from 'react'
-import apartament from "./apartament.jpg"
-
+import HeroVideo from "../Video/“IHLAS RESIDENCE».mp4"
 
 
 const Home = () => {
     return (
         <div className='hero'>
-            <img src={apartament} alt=""/>
+            <video autoPlay loop muted
+                   className='hero-video'
+            >
+                <source src={HeroVideo} type='video/mp4'/>
+            </video>
         </div>
     );
 };
