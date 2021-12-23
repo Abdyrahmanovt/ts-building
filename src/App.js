@@ -6,6 +6,7 @@ import About from "./view/About";
 import Contacts from "./view/Contacts";
 import Projects from "./view/Projects";
 import Browse from "./Components/Browse";
+import NotFound from "./view/NotFound";
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
                    <Route exact path='/contacts' element={<Contacts/>}/>
                    <Route exact path='/projects' element={<Projects/>}/>
                    <Route exact path='/projectInfo' element={<Browse/>}/>
+                   <Route exact path='*' element={<NotFound/>}/>
                </Routes>
            </div>
         </div>

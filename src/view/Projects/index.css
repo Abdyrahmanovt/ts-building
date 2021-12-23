@@ -1,16 +1,24 @@
 
 .projects{
-    background:black;
+    background: #353765;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   grid-gap: 10px;
+    grid-column-gap: 5px;
 
 }
+.box{
+    margin-top: 50px;
+}
 .card{
-    margin-top: 60px;
+    margin: 10px 20px;
 }
 .card-info{
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title{
+    list-style: none;
 }
