@@ -3,7 +3,7 @@ import axios from "axios";
 import './index.css'
 import {Link} from "react-router-dom";
 
-const Projects = ({}) => {
+const Projects = () => {
     const [projects, setProjects] = useState([])
 
 
